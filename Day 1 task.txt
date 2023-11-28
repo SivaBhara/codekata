@@ -1,1 +1,21 @@
-console.log("hi");
+ //map
+//var arr=[12,13,14,15,16]
+/*var res=arr.map((mul)=>mul*2)
+console.log(res)*/
+
+//normal function
+/*function fun(arr){
+  var n=arr.filter((mul)=>mul%2!=0)
+  return n
+}
+var arr=[12,13,14,15,16]
+console.log(fun(arr))*/
+
+//Arrow function
+var res=(arr)=>{
+  var s=arr.map((mul)=>mul*2)
+  var n=arr.filter((m)=>m%2!==0)
+  return s+"    "+n
+}
+var arr=[12,13,14,15,16]
+console.log(res(arr))
